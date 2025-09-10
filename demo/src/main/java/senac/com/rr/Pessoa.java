@@ -1,20 +1,40 @@
-package senac.rr.com;
+package senac.com.rr;
 
 public class Pessoa {
     public String nome;
     public int idade;
+    public String email;
+    public String telefone;
+    public String endereco;
+    public String Nascimento;
     private String cpf;
+
+    public Pessoa(
+        String nome,
+        int idade,
+        String email,
+        String telefone,
+        String endereco,
+        String Nascimento,
+        String cpf
+    ){
+        this.nome = nome;
+        this.idade = idade;
+        this.email = email;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.Nascimento = Nascimento;
+        this.cpf = cpf;
+    }
     
     public String getNome(){
         System.out.println("\nSeu nome é \n" + this.nome);
         return this.nome;
     }
-
     public int getIdade(){
         System.out.println("e a sua idade é \n" +this.idade );
         return this.idade;
     }
-
     public void setIdade(int idade){
         this.idade = idade;
     }
@@ -22,7 +42,6 @@ public class Pessoa {
         this.cpf = cpf;
     
     }
-
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -30,6 +49,34 @@ public class Pessoa {
     public String getCpf(){
         System.out.println("e o seu CPF é esse \n" +this.cpf);
         return this.cpf;
+    }
+    public String getEmail(){
+        System.out.println(this.email);
+        return this.email;
+    }
+    public void setEmail(String Email){
+        this.email = Email;
+    }
+    public String getTelefone(){
+        System.out.println(this.telefone);
+        return this.telefone;
+    }
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+    }
+    public String getEndereco(){
+        System.out.println(this.endereco);
+        return this.telefone;
+    }
+    public void setEndereco(String endereco){
+        this.endereco = endereco;
+    }
+     public String getNascimento(){
+        System.out.println(this.Nascimento);
+        return this.telefone;
+    }
+    public void setNascimento(String Nascimento){
+        this.Nascimento = Nascimento;
     }
     public void Andar(){
         System.out.println("\nÓ "+nome+" começa a andar" );
@@ -55,5 +102,6 @@ public class Pessoa {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 }
