@@ -1,15 +1,22 @@
 package senac.com.rr;
 
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa pessoa = new Funcionario("Nyllay", 12, "nulindl", "null", "null", "null", "null", "null", "null", 11111, "null", "ull");
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o seu Nome");
+        String nome = scanner.nextLine();
 
-       pessoa.getNome();
-       pessoa.getIdade();
-       pessoa.getCpf();
-       pessoa.getEmail();
-       pessoa.Falar();
-       pessoa.Andar();
-    }
-}
+        System.out.println("Digite a Sua idade");
+        int idade = scanner.nextInt();
+
+        System.out.println("Digite o seu email");
+        String email = scanner.nextLine();
+
+        Funcionario F1 = new Funcionario(null, 0, null, null, null, null, null, null, null, 0, null, null)
+
+        }
+          
+ }
