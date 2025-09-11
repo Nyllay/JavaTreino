@@ -7,7 +7,9 @@ public class Pessoa {
     public String telefone;
     public String endereco;
     public String Nascimento;
+     public String corDosOlhos;
     private String cpf;
+   
 
     public Pessoa(
         String nome,
@@ -16,7 +18,8 @@ public class Pessoa {
         String telefone,
         String endereco,
         String Nascimento,
-        String cpf
+        String cpf,
+        String corDosOlhos
     ){
         this.nome = nome;
         this.idade = idade;
@@ -25,8 +28,16 @@ public class Pessoa {
         this.endereco = endereco;
         this.Nascimento = Nascimento;
         this.cpf = cpf;
+        this.corDosOlhos = corDosOlhos;
     }
-    
+
+    public String getcorDosOlhos(){
+        System.out.println(this.corDosOlhos);
+        return this.corDosOlhos;
+    }
+    public void setcorDosOlhos(String corDosOlhos){
+        this.corDosOlhos = corDosOlhos;
+    }
     public String getNome(){
         System.out.println("\nSeu nome é \n" + this.nome);
         return this.nome;

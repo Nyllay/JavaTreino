@@ -3,7 +3,7 @@ package senac.com.rr;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("nyllay", 18, "algum", "ooooooooo", "aasisiqsi", "15/1/a.c10000", "alacpf")
+        Pessoa pessoa = new Funcionario("Nyllay", 12, "nulindl", "null", "null", "null", "null", "null", "null", 11111, "null", "ull");
 
        pessoa.getNome();
        pessoa.getIdade();
