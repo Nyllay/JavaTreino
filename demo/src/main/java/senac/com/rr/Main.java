@@ -10,8 +10,8 @@ public class Main {
         String nome = scanner.nextLine();
 
         System.out.println("Digite a Sua idade");
-        int idade = scanner.nextInt();
-
+        Integer idade = Integer.parseInt(scanner.nextLine()) ;
+        
         System.out.println("Digite o seu email");
         String email = scanner.nextLine();
 
@@ -34,7 +34,7 @@ public class Main {
         String matricula = scanner.nextLine();
 
         System.out.println("Digite o seu salario");
-        double salario = scanner.nextDouble();
+        Double salario = Double.parseDouble(scanner.nextLine());
 
          System.out.println("Digite o seu cargo");
         String cargo = scanner.nextLine();
@@ -55,6 +55,10 @@ public class Main {
             salario,
             cargo, 
             setor);
+
+            F1.getNome();
+            F1.getIdade();
+            F1.getcorDosOlhos();
 
         }
 
