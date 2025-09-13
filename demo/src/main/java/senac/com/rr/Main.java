@@ -59,6 +59,7 @@ public class Main {
             F1.getNome();
             F1.getIdade();
             F1.getcorDosOlhos();
+            F1.Falar();
 
         }
 
