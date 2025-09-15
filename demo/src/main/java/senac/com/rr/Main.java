@@ -60,6 +60,7 @@ public class Main {
             F1.getIdade();
             F1.getcorDosOlhos();
             F1.Falar();
+            F1.Andar();
             //Branche 2
 
         }
